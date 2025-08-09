@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การวิเคราะห์ตลาดงานรับผลิตติดตั้งโครงเหล็กในประเทศไทย</title>
+    <style>
+        :root {
+            --primary: #0d47a1;
+            --secondary: #e53935;
+            --accent: #ffc107;
+            --light: #f5f5f5;
+            --dark: #212121;
+            --text: #333;
+            --shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Prompt', sans-serif;
+        }
+        body {
+            color: var(--text);
+            background-color: var(--light);
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary), #1976d2);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+        section {
+            margin-bottom: 3rem;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease;
+        }
+        section:hover {
+            transform: translateY(-5px);
+        }
+        h1, h2, h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+        }
+        h2 {
+            font-size: 2rem;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.5rem;
+        }
+        h3 {
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        p, ul, ol {
+            margin-bottom: 1rem;
+        }
+        ul, ol {
+            padding-left: 2rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .card h3 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .img-container {
+            margin: 1.5rem 0;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        .chart-container {
+            height: 300px;
+            margin: 2rem 0;
+        }
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            background: #1565c0;
+            transform: translateY(-2px);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: var(--primary);
+            color: white;
+        }
+        tr:hover {
+            background-color: rgba(0,0,0,0.05);
+        }
+        .highlight {
+            background-color: rgba(255, 193, 7, 0.2);
+            padding: 1rem;
+            border-left: 4px solid var(--accent);
+            margin: 1.5rem 0;
+        }
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            h3 {
+                font-size: 1.2rem;
+            }
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>การวิเคราะห์ตลาดงานรับผลิตติดตั้งโครงเหล็กในประเทศไทย</h1>
+            <p>สำหรับบริษัทญี่ปุ่น</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="intro">
+            <h2>บทนำ</h2>
+            <p>ตลาดโครงสร้างเหล็กในประเทศไทยกำลังเติบโตอย่างต่อเนื่อง โดยมีบริษัทรับเหมาก่อสร้างสัญชาติญี่ปุ่นเข้ามามีบทบาทสำคัญในโครงการขนาดใหญ่ที่ต้องการคุณภาพและมาตรฐานสูง การวิเคราะห์นี้จะช่วยให้เข้าใจถึงโอกาสและความท้าทายในตลาดนี้</p>
+            <div class="img-container">
+                <img src="http://www.futureengineering.co.th/pic/IND/IRPC_Green.jpg" alt="โครงสร้างเหล็กอุตสาหกรรม">
+            </div>
+        </section>
+
+        <section id="market-overview">
+            <h2>ภาพรวมตลาด</h2>
+            <div class="chart-container" id="market-size-chart"></div>
+            
+            <h3>ขนาดตลาด</h3>
+            <p>ในปี 2566 มีปริมาณการผลิตเหล็กก่อสร้าง 3.9 ล้านตัน (เพิ่มขึ้น 6.6%) และปริมาณการจำหน่าย 4.1 ล้านตัน (เพิ่มขึ้น 11.9%) อย่างไรก็ตาม ไทยยังพึ่งพาการนำเข้าถึง 66% ของปริมาณการใช้งานทั้งหมด</p>
+            
+            <h3>แนวโน้มอุตสาหกรรมก่อสร้าง</h3>
+            <p>การลงทุนภาครัฐคาดว่าจะขยายตัว 3% ในปี 2568 โดยมีโครงการสำคัญ เช่น รถไฟทางคู่, มอเตอร์เวย์, และการขยายสนามบิน ขณะที่การก่อสร้างภาคเอกชนขยายตัวเพียง 1% เนื่องจากภาวะอุปทานล้นตลาดในบางกลุ่มอสังหาริมทรัพย์</p>
+            
+            <h3>ตลาดเฉพาะทาง</h3>
+            <div class="grid">
+                <div class="card">
+                    <h3>Data Center</h3>
+                    <p>ตลาดดาต้าเซ็นเตอร์คาดว่าจะเติบโตจาก 1.56 พันล้านดอลลาร์สหรัฐในปี 2567 เป็น 3.19 พันล้านดอลลาร์สหรัฐในปี 2573 โดยมีการลงทุนจากผู้เล่นระดับโลกอย่าง AWS และ Google</p>
+                </div>
+                <div class="card">
+                    <h3>โรงงานอุตสาหกรรม</h3>
+                    <p>แม้จะมีโรงงานปิดตัวเพิ่มขึ้น แต่การลงทุนจากต่างชาติในนิคมอุตสาหกรรมยังคงแข็งแกร่ง โดยเฉพาะในอุตสาหกรรมชิ้นส่วนอิเล็กทรอนิกส์และเครื่องปรับอากาศ</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="japanese-companies">
+            <h2>บริษัทญี่ปุ่นที่สำคัญ</h2>
+            <div class="img-container">
+                <img src="https://www.stecon.co.th/files/7b2ee754-6790-4b5a-8e7d-d9aefa2d4e8a.png" alt="โครงการก่อสร้าง">
+            </div>
+            <table id="companies-table">
+                <thead>
+                    <tr>
+                        <th>บริษัท</th>
+                        <th>ความเชี่ยวชาญ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>THAI SHIMIZU</td>
+                        <td>เชี่ยวชาญด้านการก่อสร้างและพัฒนาโครงการแบบครบวงจร</td>
+                    </tr>
+                    <tr>
+                        <td>THAI KAJIMA</td>
+                        <td>ให้บริการก่อสร้างครบวงจรทั้งวิศวกรรมโยธาและอาคาร มีทีมออกแบบของตัวเอง</td>
+                    </tr>
+                    <tr>
+                        <td>THAI OBAYASHI</td>
+                        <td>มีความเชี่ยวชาญพิเศษในโครงสร้างเหล็กที่ซับซ้อนและมีมาตรฐานสูง เช่น อาคาร O-NES และศูนย์การประชุมแห่งชาติสิริกิติ์</td>
+                    </tr>
+                    <tr>
+                        <td>THAI TAISEI</td>
+                        <td>มีความสามารถในการออกแบบโครงสร้างด้วยระบบ BIM</td>
+                    </tr>
+                    <tr>
+                        <td>THAI TAKENAKA</td>
+                        <td>มีส่วนร่วมในโครงการก่อสร้างโรงงาน เช่น โรงงานสีแห่งใหม่ของ Mitsubishi Motors</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="pestel">
+            <h2>การวิเคราะห์ PESTEL</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Political (การเมือง)</h3>
+                    <p>การผลักดันโครงการลงทุนโครงสร้างพื้นฐานขนาดใหญ่ของภาครัฐเป็นปัจจัยบวกสำคัญ</p>
+                </div>
+                <div class="card">
+                    <h3>Economic (เศรษฐกิจ)</h3>
+                    <p>การเติบโตของการลงทุนจากต่างชาติ โดยเฉพาะญี่ปุ่นซึ่งเป็นนักลงทุนรายใหญ่ที่สุดในไตรมาสแรกของปี 2567</p>
+                </div>
+                <div class="card">
+                    <h3>Social (สังคม)</h3>
+                    <p>การเปลี่ยนสู่ยุคดิจิทัลทำให้ความต้องการ Data Center เพิ่มสูงขึ้น</p>
+                </div>
+                <div class="card">
+                    <h3>Technological (เทคโนโลยี)</h3>
+                    <p>การนำเทคโนโลยีใหม่ๆ มาใช้ เช่น Double Glow Plasma Surface Metallurgy และการผลิตที่เป็นมิตรต่อสิ่งแวดล้อม</p>
+                </div>
+                <div class="card">
+                    <h3>Environmental (สิ่งแวดล้อม)</h3>
+                    <p>ข้อกำหนดด้านสิ่งแวดล้อมและการลดการปล่อยก๊าซเรือนกระจกกลายเป็นเงื่อนไขสำคัญในการประมูลโครงการใหญ่</p>
+                </div>
+                <div class="card">
+                    <h3>Legal (กฎหมาย)</h3>
+                    <p>ต้องปฏิบัติตามมาตรฐานการออกแบบโครงสร้างเหล็กของ วสท. (พ.ศ. 2565) และมาตรฐานผลิตภัณฑ์อุตสาหกรรม (สมอ.)</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="opportunities">
+            <h2>โอกาสและความท้าทาย</h2>
+            <div class="img-container">
+                <img src="http://www.futureengineering.co.th/pic/PP/Yala_3.jpg" alt="โครงการก่อสร้าง">
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <h3>โอกาส</h3>
+                    <ul>
+                        <li>โครงการลงทุนขนาดใหญ่ของภาครัฐ</li>
+                        <li>การเติบโตอย่างก้าวกระโดดของตลาด Data Center</li>
+                        <li>ความต้องการโรงงานและคลังสินค้าคุณภาพสูงใน EEC</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>ความท้าทาย</h3>
+                    <ul>
+                        <li>การพึ่งพาการนำเข้าเหล็ก</li>
+                        <li>การแข่งขันที่รุนแรง</li>
+                        <li>กฎระเบียบด้านสิ่งแวดล้อมที่เข้มงวดขึ้น</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="recommendations">
+            <h2>ข้อเสนอแนะและกลยุทธ์</h2>
+            <div class="highlight">
+                <ul>
+                    <li>มุ่งเน้นตลาดเฉพาะทางที่มีการเติบโตสูง เช่น Data Center และโรงงานอัจฉริยะ</li>
+                    <li>นำเทคโนโลยีการก่อสร้างสมัยใหม่มาใช้เพื่อเพิ่มประสิทธิภาพและลดผลกระทบต่อสิ่งแวดล้อม</li>
+                    <li>สร้างความร่วมมือกับผู้ผลิตวัสดุในประเทศเพื่อลดการพึ่งพาการนำเข้า</li>
+                    <li>พัฒนาบุคลากรให้มีความเชี่ยวชาญตามมาตรฐานสากล</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="conclusion">
+            <h2>สรุป</h2>
+            <p>ตลาดงานรับผลิตและติดตั้งโครงสร้างเหล็กในประเทศไทยมีแนวโน้มเติบโตอย่างต่อเนื่อง โดยเฉพาะในกลุ่มโครงการที่ต้องการคุณภาพและมาตรฐานสูง ซึ่งเป็นจุดแข็งของบริษัทญี่ปุ่น การมุ่งเน้นตลาดเฉพาะทางที่มีการเติบโตสูง เช่น Data Center และโรงงานอัจฉริยะ รวมถึงการนำเทคโนโลยีสมัยใหม่มาใช้จะเป็นกุญแจสำคัญสู่ความสำเร็จในอนาคต</p>
+            <button class="btn" id="download-report">ดาวน์โหลดรายงานฉบับเต็ม</button>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 การวิเคราะห์ตลาดงานรับผลิตติดตั้งโครงเหล็กในประเทศไทย</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Market Size Chart
+            const marketCtx = document.getElementById('market-size-chart').getContext('2d');
+            new Chart(marketCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['2564', '2565', '2566', '2567 (ประมาณการ)'],
+                    datasets: [
+                        {
+                            label: 'ปริมาณการผลิต (ล้านตัน)',
+                            data: [3.2, 3.65, 3.9, 4.1],
+                            backgroundColor: '#1976d2',
+                        },
+                        {
+                            label: 'ปริมาณการจำหน่าย (ล้านตัน)',
+                            data: [3.3, 3.7, 4.1, 4.3],
+                            backgroundColor: '#e53935',
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: 'ปริมาณการผลิตและจำหน่ายเหล็กก่อสร้างในประเทศไทย',
+                            font: { size: 16 }
+                        },
+                        legend: {
+                            position: 'bottom'
+                        }
+                    }
+                }
+            });
+
+            // Add hover effect to table rows
+            const tableRows = document.querySelectorAll('#companies-table tbody tr');
+            tableRows.forEach(row => {
+                row.addEventListener('mouseover', () => {
+                    row.style.backgroundColor = 'rgba(25, 118, 210, 0.1)';
+                });
+                row.addEventListener('mouseout', () => {
+                    row.style.backgroundColor = '';
+                });
+            });
+
+            // Download report button
+            document.getElementById('download-report').addEventListener('click', function() {
+                alert('กำลังเตรียมดาวน์โหลดรายงานฉบับเต็ม...');
+            });
+
+            // Add animation to cards on scroll
+            const cards = document.querySelectorAll('.card');
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            });
+
+            cards.forEach(card => {
+                card.style.opacity = 0;
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+</html>
